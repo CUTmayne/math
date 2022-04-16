@@ -1,0 +1,12 @@
+//point reflection
+
+//use points P and Q to find the point reflection of P 180 degrees around Q
+
+vector<int> findPoint(int px, int py, int qx, int qy) {
+    int mx = qx - px;
+    int my = qy - py;
+    int rx = qx + mx;
+    int ry = qy + my;
+    vector<int> reflection = {rx, ry};
+    return reflection;
+}
